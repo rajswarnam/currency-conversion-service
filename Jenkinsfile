@@ -1,6 +1,9 @@
 pipeline{
 	agent any
-	
+	tools{
+		maven 'M2_Home'
+		jsk 'JDK'
+	}
 	stages{
 		stage('Build'){
 			steps{
