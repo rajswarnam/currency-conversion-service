@@ -1,5 +1,6 @@
 pipeline{
 	agent any
+	
 	tools{
 		maven 'M2_Home'
 		jdk 'JDK'
@@ -10,14 +11,14 @@ pipeline{
 				sh 'mvn clean compile'
 			}
 		}
-		stage('Test'){
-			steps{
-			sh 'mvn test'
-			}
-		}
 		stage('Package'){
 			steps{
 			sh 'mvn package'
+			}
+		}
+		stage('Publish'){
+			steps{
+			sh 'mvn publish'
 			}
 		}
 	}
