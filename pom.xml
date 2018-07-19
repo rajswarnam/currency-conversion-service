@@ -106,7 +106,7 @@
 								<timeoutSec>60</timeoutSec>
 							</artifactory>
 							<publisher>
-								<contextUrl>http://localhost.buildbox.com:8081/artifactory</contextUrl>
+								<contextUrl>http://local.buildbox.com:8081/artifactory</contextUrl>
 								<username>admin</username>
 								<password>admin</password>
 								<excludePatterns>*-tests.jar</excludePatterns>
