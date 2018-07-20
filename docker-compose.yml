@@ -1,0 +1,14 @@
+version: '2.2'
+service:
+  currency-conversion-service:
+    build:
+      context:  ./
+      dockerfile: Dockerfile
+    image:  currenvy-conversion-service
+    ports:
+      - 8080
+    network:
+      - network1
+      
+networks:
+  network1:
